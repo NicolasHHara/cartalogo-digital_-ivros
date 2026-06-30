@@ -1,0 +1,46 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+ margin: 0;
+ min-width: 320px;
+ min-height: 100vh;
+ color: #e5edf8;
+ background:
+ radial-gradient(circle at top left, rgba(20,184,166,.22), tra
+ nsparent 32rem),
+ radial-gradient(circle at bottom right, rgba(124,58,237,.22),
+ transparent 30rem),
+ #020617;
+ font-family: Inter, system-ui, -apple-system, BlinkMacSystemFon
+ t, "Segoe UI", sans-serif;
+}
+
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.empty-state strong {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.empty-state p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .painel-estatisticas,
+  .filtros,
+  .lista-livros {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.3rem, 12vw, 4rem);
+  }
+}

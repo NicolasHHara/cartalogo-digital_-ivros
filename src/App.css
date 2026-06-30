@@ -1,0 +1,43 @@
+.header,
+.pagina,
+.footer {
+ width: min(1180px, 92%);
+ margin-inline: auto;
+}
+.hero {
+ min-height: 440px;
+ display: grid;
+ align-items: end;
+ padding: clamp(28px, 6vw, 72px);
+ border-radius: 38px;
+ background:
+ linear-gradient(135deg, rgba(15,23,42,.96), rgba(24,54,91,.82))
+ ,
+ radial-gradient(circle at 88% 18%, rgba(94,234,212,.34), transp
+ arent 18rem);
+}
+.painel-estatisticas {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 16px;
+ margin-top: 22px;
+}
+.filtros {
+ display: grid;
+ grid-template-columns: 1.5fr .9fr 1.1fr;
+ gap: 16px;
+ align-items: end;
+ margin-top: 22px;
+ padding: 18px;
+ border-radius: 28px;
+}
+.lista-livros {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 18px;
+ margin-top: 22px;
+}
+.card-livro {
+ overflow: hidden;
+ border-radius: 26px;
+}
