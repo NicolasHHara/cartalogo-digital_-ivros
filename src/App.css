@@ -3,6 +3,7 @@
 /* Atencao: largura fixa sem clamp/min pode quebrar layout em telas extremas. */
 /* Interessante: regra compartilhada reduz duplicacao entre secoes estruturais. */
 width: min(1120px, 92%);
+margin-inline: auto;
 }
 .header {
 display: flex;
